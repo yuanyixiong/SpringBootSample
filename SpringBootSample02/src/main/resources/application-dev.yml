@@ -1,0 +1,27 @@
+server:
+  contextPath: /dev
+  port: 80
+  sessionTimeout: 30
+  tomcat.maxThreads: 0
+  tomcat.uriEncoding: UTF-8
+
+
+spring:
+
+  #date base connection
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: root
+
+
+  #jap hibernate
+  jpa:
+    showSql: true
+    hibernate:
+      ddlAuto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+

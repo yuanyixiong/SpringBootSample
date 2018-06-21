@@ -1,0 +1,13 @@
+/**
+ * 静态文件优先级
+ * src/main/resources/META-INF.resources
+ * src/main/resources/resources
+ * src/main/resources/static
+ * src/main/resources/public
+ *
+ * css引用
+ * <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}" />
+ */
+body{
+	color: red;
+}

@@ -1,0 +1,14 @@
+server:
+  contextPath: /prod
+  port: 8090
+  sessionTimeout: 30
+  tomcat.maxThreads: 0
+  tomcat.uriEncoding: UTF-8
+
+
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: root
