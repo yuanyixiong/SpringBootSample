@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <!--自定义的-->
+    <link type="text/css" rel="stylesheet" href="http://localhost:8080/static/css/upload.css"/>
+    <script type="application/javascript" src="http://localhost:8080/static/js/upload.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form action="/uploadController/do_upload" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="input_file">文件:</label>
+                <input id="input_file" type="file" name="file" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="提交"/>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
