@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <!--spring boot 模板取值-->
+    <p th:text="${users}" />
+    <p th:text="${users.id}" />
+    <p th:text="${users.name}" />
+    <p th:text="${users.sex}" />
+    <p th:text="${users.age}" />
+
+    <ul>
+        <li th:each="obj : ${useries}" th:text="${obj.name}" th:if="${obj.id%2==0}" style="color: red"/>
+        <li th:each="obj : ${useries}" th:text="${obj.name}" th:if="${obj.id%2==1}" style="color: black"/>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,28 @@
+
+server:
+  contextPath: /dev
+  port: 80
+  sessionTimeout: 30
+  tomcat.maxThreads: 0
+  tomcat.uriEncoding: UTF-8
+
+spring:
+  mvc:
+    view:
+      prefix: /templates
+      suffix: .html
+
+  datasource:
+    # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+    name: test
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/test
+    driverClassName: com.mysql.jdbc.Driver
+
+
+
+mybatis:
+  mapperLocations: classpath:online/qsx/mapper/*.xml
+  typeAliasesPackage: online.qsx.model

@@ -1,0 +1,70 @@
+
+[
+	{
+		"id": 1,
+		"text": "外网",
+		"children": [
+			{
+				"text": "百度",
+				"checked": true,
+				"attributes": {
+					"name":"百度",
+					"url": "https://www.baidu.com"
+				}
+			},
+			{
+				"text": "京东",
+				"checked": false,
+				"attributes": {
+					"name":"京东",
+					"url": "https://www.jd.com"
+				}
+			},
+			{
+				"text": "淘宝",
+				"checked": true,
+				"attributes": {
+					"name":"淘宝",
+					"url": "https://www.taobao.com"
+				}
+			}
+		]
+	},
+	{
+		"id": 1,
+		"text": "系统内部",
+		"state": "closed",
+		"children": [
+			{
+				"text": "资源管理",
+				"attributes": {
+					"name":"资源管理",
+					"url": "resource_datagrid.jsp"
+				}
+			},
+			{
+				"text": "角色管理",
+				"attributes": {
+					"name":"角色管理",
+					"url": "role_datagrid.jsp"
+				}
+			},
+			{
+				"text": "用户管理",
+				"attributes": {
+					"name":"用户管理",
+					"url": "user_datagrid.jsp"
+				}
+			},
+			{
+				"text": "权限管理",
+				"attributes": {
+					"name":"权限管理",
+					"url": "jurisdiction_datagrid.jsp"
+				}
+			}
+		]
+	}
+]
+
+
